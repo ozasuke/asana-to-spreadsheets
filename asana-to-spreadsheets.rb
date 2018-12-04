@@ -1,11 +1,11 @@
 require 'bundler'
-require 'spreadsheets_wrapper'
+require './spreadsheets_wrapper'
 Bundler.require
 
 class AsanaToSpreadsheets
 
   def initialize
-    
+    @spread_sheets = SpreadsheetsWrapper.new
   end
 
   def run
@@ -36,4 +36,4 @@ class AsanaToSpreadsheets
   end
 end
 
-
+AsanaToSpreadsheets.run
