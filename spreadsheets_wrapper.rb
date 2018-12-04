@@ -23,7 +23,7 @@ class SpreadsheetsWrapper
     end
   end
 
-  # private
+  private
 
   def find_row_from_task_id(id)
     task_ids.find_index(id)
